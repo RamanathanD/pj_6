@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Bus Details
+        </title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            button{
+               margin-left: 580px;
+            }
+            p{
+                text-align: center;
+            }
+        </style>
+        <script>
+         function myFunction(){
+            let x = document.getElementById("lara").value;
+            let y = document.getElementById("rin").value;
+            document.getElementById("demo").innerHTML=x;
+            // document.getElementById("demo").innerHTML="p<br>"
+            document.getElementById("dem").innerHTML=y;
+         }
+            </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header><br>
+            <h1>Bus Details</h1>
+        </header>
+        <section><br><br>
+            <!-- <fieldset> -->
+            <div style="text-align: center;margin-left: 70px;">
+            <label style="text-align-last: left;" for="uname"><b>Busname:</b></label>
+            <input id="lara" style="margin-right: 40px;margin-left: 70px;" type="text" placeholder="" name="uname" value=" Busname:" required>
+        </div><br><br>
+        <div style="text-align: center;margin-left: 38px;">
+            <label style="text-align-last: left;" for="uname"><b>Amount of fuil:</b></label>
+            <input id="rin" style="margin-right: 40px;margin-left: 70px;" type="text" placeholder="" name="uname" value="Amount of fuil: " required>
+        </div><br><br>
+        <button onclick="myFunction()">submit</button>
+        <p id="demo"></p>
+        <p id="dem"></p>
+    <!-- </fieldset> -->
+        </section>
+        <footer></footer>
+        
+    </body>
+</html>
